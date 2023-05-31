@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Page Title</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="">
+<style>
+html,body {font-family:"Verdana",sans-serif}
+h1,h2,h3,h4,h5,h6 {font-family:"Segoe UI",sans-serif}
+</style>
+<script src=""></script>
+<body>
+
+  
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>My Title</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+</style>
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+<body>
+  
+<img class="images" src="cocora.jpeg" width="50%">
+<img class="images" src="parchado.jpeg" width="50%">
+<img class="images" src="monkey.jpeg" width="50%">
+  
+<script>
+  w3.slideshow(".images", 1500);
+</script>
+  
+</body>
+</html>
+
+
+<div class="w3-container w3-black">
+
+  <h1>Juan Camilo Diez</h1>
+  <p>Colegio los Nogales</p>
+  <p>For further information</p>
+  
+  </div>
+
+</body>
+</html>
+
+
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<div class="w3-container">
+  <h1>Work Experience</h1>
+  <p>Find here my academic and professional experiences.</p>
+</div>
+
+<div class="w3-container w3-red">
+  <h2>Dubai</h2>
+  <p>Currently senior oil extractor engineer operator. Grossed 1.2B/month, office @ the last floor of burj Khalifa</p>
+</div>
+
+<div class="w3-container w3-teal">
+  <h2>Tokyo</h2>
+  <p>Worked at kirby cafe (as kirby) </p>
+</div>
+
+<div class="w3-container w3-yellow">
+  <h2>London</h2>
+  <p>CEO of anti-shank vest company (ShankNo!)</p>
+</div>
+
+<div class="w3-container w3-gray">
+  <h2>Bogota</h2>
+  <p>Rappi Local Exports Logistics Division Manager (both bike and motorbike)</p>
+</div>
+
+<div class="w3-container w3-blue">
+  <h2>New York</h2>
+  <p>Senior rat exterminator @ Columbia Univeristy</p>
+</div>
+
+</body>
+</html> 
+<a href="./contact.html">Contact me!</a>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>My Slider</title>
+    <style type="text/css">
+        body {
+            margin: 0;
+            background: #e6e6e6;
+        }
+        .showSlide {
+            display: none
+        }
+            .showSlide img {
+                width: 100%;
+            }
+        .slidercontainer {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+        .left, .right {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: yellow;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+        }
+        .right {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+            .left:hover, .right:hover {
+                background-color: rgba(115, 115, 115, 0.8);
+            }
+        .content {
+            color: yellow;
+            font-size: 30px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 10px;
+            width: 100%;
+            text-align: center;
+        }
+        .active {
+            background-color: #717171;
+        }
+        /* Fading animation */
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+        @-webkit-keyframes fade {
+            from {
+                opacity: .4
+            }
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+            to {
+                opacity: 1
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="slidercontainer">
+        <div class="showSlide fade">
+            <img src="bernardo.jpg" />
+            <div class="content">My dog, bernardo</div>
+        </div>
+        <div class="showSlide fade">
+            <img src="fav_movie.jpeg" />
+            <div class="content">Cloudy with a chance of MeatBalls is my fav movie</div>
+        </div>
+
+        <div class="showSlide fade">
+            <img src="plottin.jpeg" />
+            <div class="content"></div>
+        </div>
+
+        <!-- Navigation arrows -->
+        <a class="left" onclick="nextSlide(-1)">?</a>
+        <a class="right" onclick="nextSlide(1)">?</a>
+    </div>
+
+    <script type="text/javascript">
+        var slide_index = 1;
+        displaySlides(slide_index);
+
+        function nextSlide(n) {
+            displaySlides(slide_index += n);
+        }
+
+        function currentSlide(n) {
+            displaySlides(slide_index = n);
+        }
+
+        function displaySlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("showSlide");
+            if (n > slides.length) { slide_index = 1 }
+            if (n < 1) { slide_index = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slide_index - 1].style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
